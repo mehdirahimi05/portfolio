@@ -1,20 +1,14 @@
-.logo img {
-    width: 50px;
-    height: 50px;
-}
-
-.pic img {
+body img{
     width: 100px;
     height: 100px;
 }
-
-.box_container img {
-    width: 100px;
-    height: 100px;
+header nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header img{
+    width: 2rem;
+    height: 2rem;
 }
 
-footer img {
-
-    width: 50px;
-    height: 50px;
-}
