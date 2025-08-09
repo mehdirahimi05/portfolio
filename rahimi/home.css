@@ -4,6 +4,10 @@ body {
     display: inline;
     color: white;
 }
+body img {
+    width: 100px;
+    height: 100px;
+}
 /*End body styling*/
 
 
@@ -103,11 +107,29 @@ article .mehdi_img{
     border-radius: 1rem;
     padding: 10px;
 }
+/*End article styling*/
 
-
+/*Start main styling*/
 main {
     background-color: #16243c;
+    padding: 10px;
 }
+main .brain_headline{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: justify;
+}
+main .brain_text{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+main .books_img{
+    width: 95%;
+    height: 300px;
+}
+
+
+
 
 .box_container {
     margin: 4px;
@@ -116,10 +138,7 @@ main {
 
 
 
-body img {
-    width: 100px;
-    height: 100px;
-}
+
 
 
 footer {
@@ -134,8 +153,8 @@ footer {
     nav{
         flex-direction: column;
     }
-    article{
-        grid-template-columns: 2fr, 1fr;
+    article .contest_text{
+        grid-template-columns: 2fr 1fr;
     }
     
 }
