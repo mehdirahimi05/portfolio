@@ -4,6 +4,7 @@ body {
     display: inline;
     color: white;
 }
+
 body img {
     width: 100px;
     height: 100px;
@@ -21,6 +22,7 @@ header {
     top: 0;
     position: sticky;
 }
+
 header .logo_img {
     width: 50px;
     height: 50px;
@@ -30,6 +32,7 @@ header nav {
     display: flex;
     width: 100%;
 }
+
 header nav ul {
     display: flex;
     width: 100%;
@@ -39,10 +42,12 @@ header nav ul {
     height: 50px;
     background-color: white;
 }
+
 header nav li {
     flex: 1;
     border-right: 1px solid #16243c;
 }
+
 header nav li a {
     display: block;
     width: 100%;
@@ -53,21 +58,25 @@ header nav li a {
     color: #16243c;
     text-decoration: none;
 }
+
 header nav li:last-child {
     border-right: none;
 }
+
 header nav li a,
 header nav li a:visited {
     /*Inheritence*/
     color: inherit;
     display: block;
 }
+
 header nav li:hover {
     background-color: #16243c;
     color: white;
     cursor: pointer;
     opacity: 1;
 }
+
 header .home_list {
     background-color: #16243c;
     color: white;
@@ -75,7 +84,6 @@ header .home_list {
 /*End  header styling*/
 
 /*Start article styling*/
-
 article {
     margin: 5px;
     padding-top: 10px;
@@ -84,23 +92,26 @@ article {
     color: #16243c;
 }
 
-article .contest_words{
+article .contest_words {
     display: inline;
     text-align: center;
 
 }
-article .contest_greeting{ 
+
+article .contest_greeting {
     display: grid;
     padding: 10px;
 }
-article .contest_text{
+
+article .contest_text {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 10px;
     font-size: larger;
     padding: 10px;
 }
-article .mehdi_img{
+
+article .mehdi_img {
     width: 95%;
     height: 400px;
     object-fit: cover;
@@ -114,47 +125,67 @@ main {
     background-color: #16243c;
     padding: 10px;
 }
-main .brain_headline{
+
+main .box_container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    text-align: justify;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    font-size: smaller;
+    margin: 5px;
 }
-main .brain_text{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-main .books_img{
-    width: 95%;
-    height: 300px;
-}
+/*End main styling*/
 
-
-
-
-.box_container {
-    margin: 4px;
-
-}
-
-
-
-
-
-
+/*Start footer styling*/
 footer {
     background-color: white;
     margin: 4px;
-
     color: #16243c;
 }
 
+footer .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    border-bottom: 2px solid #16243c;
+    padding-bottom: 1rem;
+    margin: 5px;
+}
+
+footer .footer_text {
+    order: 2;
+}
+
+footer .contact {
+    order: 1;
+}
+
+footer .links {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+footer .social_links {
+    display: flex;
+    gap: 0.7rem;
+}
+
+footer .github,
+.instagramm {
+    margin-left: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+/*End footer stlying*/
+
 @media screen and (min-width: 768px) {
 
-    nav{
+    nav {
         flex-direction: column;
     }
-    article .contest_text{
+
+    article .contest_text {
         grid-template-columns: 2fr 1fr;
     }
-    
 }
