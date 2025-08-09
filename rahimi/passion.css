@@ -1,9 +1,10 @@
-.story_container img{
+.ph_container img{
     width: 100px;
     height: 100px;
 }
 
-header .story_list{
+
+header .passion_list{
     background-color: #16243c;
     color: white;
 }
