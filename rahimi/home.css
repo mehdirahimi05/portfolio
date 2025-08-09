@@ -1,10 +1,19 @@
-/*Start Header styling*/
+/*Start body styling*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    color: white;
+}
+/*End body styling*/
+
+
+/*Start header styling*/
 header {
     display: flex;
     position: fixed;
     padding-top: 0px;
     width: 100%;
-    color: black;
+    color: #16243c;
     top: 0;
     position: sticky;
 }
@@ -29,7 +38,6 @@ header nav ul {
 header nav li {
     flex: 1;
     border-right: 1px solid #16243c;
-    transition: 0.15s;
 }
 header nav li a {
     display: block;
@@ -38,7 +46,7 @@ header nav li a {
     padding: 1rem;
     box-sizing: border-box;
     text-align: center;
-    color: black;
+    color: #16243c;
     text-decoration: none;
 }
 header nav li:last-child {
@@ -60,28 +68,41 @@ header .home_list {
     background-color: #16243c;
     color: white;
 }
-/*End  Header styling*/
+/*End  header styling*/
 
-
-body {
-    display: inline;
-    color: white;
-}
-
-footer {
-    background-color: white;
-    margin: 4px;
-
-    color: black;
-}
+/*Start article styling*/
 
 article {
-    margin: 4px;
-    padding-top: 4rem;
+    margin: 5px;
+    padding-top: 10px;
+    margin-right: 10px;
     background-color: white;
-    color: black;
+    color: #16243c;
 }
 
+article .contest_words{
+    display: inline;
+    text-align: center;
+
+}
+article .contest_greeting{ 
+    display: grid;
+    padding: 10px;
+}
+article .contest_text{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 10px;
+    font-size: larger;
+    padding: 10px;
+}
+article .mehdi_img{
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+    padding: 10px;
+}
 
 
 main {
@@ -93,11 +114,28 @@ main {
 
 }
 
-.contest_greeting {
-    display: flex;
-}
+
 
 body img {
     width: 100px;
     height: 100px;
+}
+
+
+footer {
+    background-color: white;
+    margin: 4px;
+
+    color: #16243c;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav{
+        flex-direction: column;
+    }
+    article{
+        grid-template-columns: 2fr, 1fr;
+    }
+    
 }
